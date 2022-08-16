@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<link rel="stylesheet" href="/nav.css">
+<body>
+    <div class="container">
+        <div class="logo">
+            <a href="#"><img src="./images/download.jpg" alt="logo"></a>
+        </div>
+    <div class="navbar">
+    
+    <div class="icon-bar" onclick="Show()">
+        <i></i>
+        <i></i>
+        <i></i>
+    </div>
+    
+    <ul id="nav-lists">
+        <li class="close"><span onclick="Hide()">×</span></li>
+        <li><a href="/home.html">Home</a></li>
+        <li><a href="/blog.html">Blog</a></li>
+        <li><a href="/about.html">About</a></li>
+        <li><a href="/contact.html">Contact</a></li>
+    </ul>
+    
+    </div>
+    </div>
+    <div class="body">
+        
+    </div>
+      
+
+    <script>
+        var navList = document.getElementById("nav-lists");
+        function Show() {
+        navList.classList.add("_Menus-show");
+        }
+        
+        function Hide(){
+        navList.classList.remove("_Menus-show");
+        }
+        </script>
+    
+</body>
+</html>
